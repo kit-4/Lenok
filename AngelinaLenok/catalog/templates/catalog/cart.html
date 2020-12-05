@@ -1,0 +1,87 @@
+{% extends 'catalog/main.html' %}
+
+{% block content %}
+<h1>Cart</h1>
+<hr>
+  <div class="row justify-content-center align-items-center" id="cart-row">
+    <div class="col-6">
+      <div class="row text-center align-items-center">
+        <div class="col-6">
+          <div style="text-align:left">item</div>
+        </div>
+        <div class="col-6">
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="row text-center align-items-center">
+        <div class="col-9">
+          <div style="text-align: right">price</div>
+        </div>
+        <div class="col-3">
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+{% for item in items %}
+<div id="{{ item.picture.picture_id }}">
+  <div class="row justify-content-center align-items-center" id="cart-row">
+    <div class="col-6">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-6">
+          <a href="item/{{ item.picture.picture_id}}">
+						<img style="max-height: 100px" class="img-fluid" src="{{ item.picture.image.url }}" alt="Picture image">
+					</a>
+        </div>
+        <div class="col-6">
+          <a href="item/{{ item.picture.picture_id}}" style="text-decoration:none; color:#333333">
+						<div>{{ item.picture.title }}</div>
+					</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="row text-center align-items-center">
+        <div class="col-9">
+          <div style="text-align: right">{{ item.picture.price }}</div>
+        </div>
+        <div class="col-3">
+            <button data-id="{{ item.picture.picture_id }}" data-action="remove"
+            style="text-decoration: none; color: #333333;"  
+            class="bg-transparent border-0 shadow-none far fa-times-circle update-cart"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+{% endfor %}
+<p id="total">Total {{ total }} RUB</p>
+<button onclick="window.location.href='{% url 'checkout' %}'" class="btn btn-outline-dark" role="button" aria-pressed="true">Continue</button>
+<!--
+<hr>
+  <div class="row justify-content-center align-items-center" id="cart-row">
+    <div class="col-6">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-2">
+          <a style="text-decoration: none; color: #333333;" href="#" class="far fa-times-circle"></a>
+        </div>
+        <div class="col-5">
+          <img style="max-height: 100px" class="img-fluid" src="media/images/2.jpg" alt="Picture image">
+        </div>
+        <div class="col-5">
+          <p class="text-fluid">some long picture name</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <p class="text-fluid" style="text-align:right;">10293401Rub</p>
+    </div>
+  </div>
+<hr>
+-->
+  
+
+{% endblock %}
+

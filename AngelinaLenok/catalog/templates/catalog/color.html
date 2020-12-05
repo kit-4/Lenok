@@ -1,0 +1,84 @@
+{% extends 'catalog/main.html' %}
+{% load static %}
+
+{% block content %}
+  <h1 id="sectionheader">ЯРКОЕ</h1>
+  <div class="card-columns">
+      {% for picture in items %}
+      <div class="card" {% if picture.status == 'a' %}id="{{ picture.picture_id }}"{% endif %}>
+				<a href="item/{{picture.picture_id}}"><img class="card-img-top" src="{{ picture.image.url }}" alt="blank image"></a>
+            <div class="card-body">
+              <a style="text-decoration:none; color:#333333" href="item/{{picture.picture_id}}">
+								<h5 class="card-title">{{ picture.title }}</h5>
+							</a>
+			  {% if picture.status == 'a' %}
+                <p class="card-text">{{ picture.price }} Rub<p>
+            {% endif %}
+              <p class="card-text" style="font-size: 14px;">{{ picture.width }}x{{ picture.height }}</p>
+              <p class="card-text" style="font-size: 14px;">{{ picture.materials }}</p>
+                {% if picture.status == 'a' %}
+                <button data-id="{{ picture.picture_id }}" data-action="add" class="btn rounded-0 btn-outline-dark update-cart" role="button"
+                  aria-pressed="true">добавить в корзину</button>
+                {% endif %}
+                {% if picture.status == 'u' %}
+                  <button id="contactbutton" class="btn rounded-0 btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">связаться для покупки</button>
+                {% endif %}
+							<!-- Button trigger modal -->
+							<button type="button" class="btn rounded-0 btn-outline-dark"
+                data-toggle="modal" id="modalbutton" data-target="#modal{{ picture.picture_id }}">
+								быстрый просмотр
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="modal{{ picture.picture_id }}" 
+								tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="row" style="justify-content: right">
+											<button type="button" 
+												style="margin-right: 20px; margin-top: 10px;" 
+												class="bg-transparent border-0 shadow-none fa fa-times-circle" 
+												data-dismiss="modal">
+											</button>	
+										</div>
+										<div class="modal-body">
+											<div class="container">
+												<div class="row">
+													<div class="col">
+														<a href="item/{{picture.picture_id}}">
+                              <img style="max-width: 300px;" src="{{ picture.image.url }}" alt="">
+                            </a>
+													</div>
+													<div class="col">
+														<a style="text-decoration:none; color:#333333" href="item/{{picture.picture_id}}">
+                             <h3 style="color:#333333">{{ picture.title }}</h3>
+                            </a>
+                            {% if picture.status == 'a' %}
+														  <p style="color:#339933; margin-top:20px; margin-buttom:20px">{{ picture.price }} RUB</p>
+                            {% endif %}
+														<p style="font-size:14px; color:grey">{{ picture.width }} x {{ picture.height }} cm</p>
+														<p style="font-size:14px; color:grey">{{ picture.materials }}</p>
+                            <p style="color:#333333">{{ picture.description }}</p>
+														{% if picture.is_in_color or picture.is_in_graphics %}
+														<p>Категория: {% if picture.is_in_color %} <a style="color:#333333"href="{% url 'color' %}">цветное </a> {% endif %}
+															{% if picture.is_in_graphics %} <a style="color:#333333" href="{% url 'graphics' %}">графика</a> {% endif %}</p> {% endif %}
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+                      {% if picture.status == 'a' %}
+                      <button data-id="{{ picture.picture_id }}" data-action="add" class="btn btn-outline-dark update-cart" role="button"
+                        aria-pressed="true">добавить в корзину</button>
+                      {% endif %}
+                      {% if picture.status == 'u' %}
+                        <button id="contactbutton" class="btn rounded-0 btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">связаться для покупки</button>
+                      {% endif %}
+										</div>
+									</div>
+								</div>
+							</div>
+            </div>
+          </div>
+      {% endfor %}
+  </div>
+{% endblock %}
