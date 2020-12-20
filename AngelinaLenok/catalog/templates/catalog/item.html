@@ -1,4 +1,5 @@
 {% extends 'catalog/main.html' %}
+{% load i18n %}
 {% block content %}
 <div class="row">
 	<div class="col-sm-8">
@@ -14,17 +15,17 @@
 		<p style="font-size:14px; color:grey">{{ picture.materials }}</p>
 		<p style="color:#333333">{{ picture.description }}</p>
 		{% if picture.is_in_color or picture.is_in_graphics %}
-		<p>Категория: {% if picture.is_in_color %} <a style="color:#333333"href="{% url 'color' %}">color </a> {% endif %}
+		<p>{% trans "Category" %}: {% if picture.is_in_color %} <a style="color:#333333"href="{% url 'color' %}">color </a> {% endif %}
 		{% if picture.is_in_graphics %} <a style="color:#333333" href="{% url 'graphics' %}">graphics </a> {% endif %}</p> {% endif %}
 
 		{% if picture.status == 'a' %} 
 		<button data-id="{{ picture.picture_id }}"
 			data-action="add" id="updatebutton" class="btn btn-secondary update-cart" 
-			type="button">добавить в корзину
+																			 type="button">{% trans "add to cart" %}
 		</button>
 		{% endif %}
 		{% if picture.status == 'u' %}
-			<button id="contactbutton" class="btn btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">связаться для покупки</button>
+		<button id="contactbutton" class="btn btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">{% trans "contact to buy" %}</button>
 		{% endif %}
 		</div>
 {% endblock %}

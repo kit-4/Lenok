@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-20 21:26+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: catalog/templates/catalog/about.html:7
+#: catalog/templates/catalog/main.html:120
+msgid "ARTIST"
+msgstr "ХУДОЖНИК"
+
+#: catalog/templates/catalog/about.html:10
+msgid "Angelina Lenok"
+msgstr "Ангелина Ленок"
+
+#: catalog/templates/catalog/about.html:10
+msgid ""
+"is a young artist having a special art qualifications, from 2018 to present "
+"- student of the Faculty of Arts Lomonosov Moscow State University (MSU)"
+msgstr ""
+"- молодой художник, имеющий специальное художественное образование, в "
+"настоящий момент студент МГУ им. М.В. Ломоносова."
+
+#: catalog/templates/catalog/about.html:13
+msgid "CONCEPT"
+msgstr "КОНЦЕПЦИЯ ТВОРЧЕСТВА"
+
+#: catalog/templates/catalog/color.html:6
+#: catalog/templates/catalog/store.html:14
+msgid "COLOR"
+msgstr "ЦВЕТНОЕ"
+
+#: catalog/templates/catalog/color.html:22
+#: catalog/templates/catalog/color.html:72
+#: catalog/templates/catalog/graphics.html:22
+#: catalog/templates/catalog/graphics.html:72
+#: catalog/templates/catalog/item.html:24
+#: catalog/templates/catalog/works.html:20
+#: catalog/templates/catalog/works.html:71
+msgid "add to cart"
+msgstr "добавить в корзину"
+
+#: catalog/templates/catalog/color.html:25
+#: catalog/templates/catalog/color.html:75
+#: catalog/templates/catalog/graphics.html:25
+#: catalog/templates/catalog/graphics.html:75
+#: catalog/templates/catalog/item.html:28
+#: catalog/templates/catalog/works.html:23
+#: catalog/templates/catalog/works.html:75
+msgid "contact to buy"
+msgstr "связаться для покупки"
+
+#: catalog/templates/catalog/color.html:30
+#: catalog/templates/catalog/graphics.html:30
+#: catalog/templates/catalog/works.html:28
+msgid "quick view"
+msgstr "быстрый просмотр"
+
+#: catalog/templates/catalog/color.html:63
+#: catalog/templates/catalog/graphics.html:63
+#: catalog/templates/catalog/item.html:18
+#: catalog/templates/catalog/works.html:61
+msgid "Category"
+msgstr "Категория"
+
+#: catalog/templates/catalog/color.html:63
+#: catalog/templates/catalog/graphics.html:63
+#: catalog/templates/catalog/works.html:61
+msgid "color"
+msgstr "цветное"
+
+#: catalog/templates/catalog/color.html:64
+#: catalog/templates/catalog/graphics.html:64
+#: catalog/templates/catalog/works.html:62
+msgid "graphics"
+msgstr "графика"
+
+#: catalog/templates/catalog/contacts.html:4
+#: catalog/templates/catalog/main.html:117
+msgid "CONTACTS"
+msgstr "КОНТАКТЫ"
+
+#: catalog/templates/catalog/contacts.html:9
+msgid "phone"
+msgstr "телефон"
+
+#: catalog/templates/catalog/contacts.html:19
+msgid "Your name"
+msgstr "Ваше имя"
+
+#: catalog/templates/catalog/contacts.html:27
+msgid "Message"
+msgstr "Сообщение"
+
+#: catalog/templates/catalog/contacts.html:31
+msgid "Send"
+msgstr "Отправить"
+
+#: catalog/templates/catalog/graphics.html:6
+#: catalog/templates/catalog/store.html:9
+msgid "GRAPHICS"
+msgstr "ГРАФИКА"
+
+#: catalog/templates/catalog/main.html:74
+msgid "ANGELINA LENOK"
+msgstr "АНГЕЛИНА ЛЕНОК"
+
+#: catalog/templates/catalog/main.html:111
+#: catalog/templates/catalog/works.html:6
+msgid "WORKS"
+msgstr "РАБОТЫ"
+
+#: catalog/templates/catalog/main.html:114
+msgid "SHOP"
+msgstr "МАГАЗИН"
+
+#~ msgid "Contacts"
+#~ msgstr "Контакты"
+
+#~ msgid ""
+#~ "Another journey chamber way yet females man. Way extensive and dejection "
+#~ "get delivered deficient sincerity gentleman age. Too end instrument "
+#~ "possession contrasted motionless. Calling offence six joy feeling. Coming "
+#~ "merits and was talent enough far. Sir joy northward sportsmen education. "
+#~ "Discovery incommode earnestly no he commanded if. Put still any about "
+#~ "manor heard."
+#~ msgstr ""
+#~ "какой-то текст "
+#~ "очефажывдалофдылваофдылвоафждылвоаждфылоаждфлафдывлафыдвлаофдылвоафдывафодываофдылваодфлывоалдфывл"

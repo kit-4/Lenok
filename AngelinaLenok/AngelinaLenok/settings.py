@@ -24,10 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+DEBUG = True
 #DEBUG = True
 
-ALLOWED_HOSTS = ['www.lenok.space', 'lenok.space']
+#ALLOWED_HOSTS = ['www.lenok.space', 'lenok.space']
 
 
 # Application definition
@@ -46,7 +46,8 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-#    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -102,6 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOCALE_PATHS = [
+        os.path.join(BASE_DIR, 'catalog', 'locale')
+        ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
