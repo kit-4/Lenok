@@ -126,6 +126,16 @@ li.nav-item a{
   border: 1px solid black;
 }
 
+#langbutton{
+  background-color:white;
+  color: #333333;
+  border: 0px;
+}
+#langbutton:hover{
+  background-color:LightGray;
+  color: #333333;
+  border: 0px;
+}
 .navbar.navbar-expand-lg{
 background-color: lightGrey;
 }

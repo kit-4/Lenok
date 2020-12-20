@@ -1,8 +1,9 @@
 {% extends 'catalog/main.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block content %}
-  <h1 id="sectionheader">РАБОТЫ</h1>
+<h1 id="sectionheader">{% trans "WORKS" %}</h1>
   <div class="card-columns">
       {% for picture in items %}
       <div class="card" {% if picture.status == 'a' %}id="{{ picture.picture_id }}{% endif %}">
@@ -16,15 +17,15 @@
               <!-- implemeniting is on sale mark -->
               {% if picture.status == 'a' %}
                 <button data-id="{{ picture.picture_id }}" data-action="add" id="updatebutton" class="btn btn-secondary update-cart" role="button"
-                aria-pressed="true">добавить в корзину</button>
+                aria-pressed="true">{% trans "add to cart" %}</button>
               {% endif %}
               {% if picture.status == 'u' %}
-                <button id="contactbutton" class="btn rounded-0 btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">связаться для покупки</button>
+                <button id="contactbutton" class="btn rounded-0 btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">{% trans "contact to buy" %}</button>
               {% endif %}
 							<!-- Button trigger modal -->
 							<button type="button" class="rounded-0 btn btn-outline-dark"
                 data-toggle="modal" id="modalbutton" data-target="#modal{{ picture.picture_id }}">
-								быстрый просмотр
+								{% trans "quick view" %}
 							</button>
 							<!-- Modal -->
 							<div class="modal fade" id="modal{{ picture.picture_id }}" 
@@ -57,8 +58,8 @@
 														<p style="font-size:14px; color:grey">{{ picture.materials }}</p>
                             <p style="color:#333333">{{ picture.description }}</p>
 														{% if picture.is_in_color or picture.is_in_graphics %}
-														<p>Категория: {% if picture.is_in_color %} <a style="color:#333333"href="{% url 'color' %}">цветное </a> {% endif %}
-															{% if picture.is_in_graphics %} <a style="color:#333333" href="{% url 'graphics' %}">графика</a> {% endif %}</p> {% endif %}
+														<p>{% trans "Category" %}: {% if picture.is_in_color %} <a style="color:#333333"href="{% url 'color' %}">{% trans "color" %} </a> {% endif %}
+															{% if picture.is_in_graphics %} <a style="color:#333333" href="{% url 'graphics' %}">{% trans "graphics" %}</a> {% endif %}</p> {% endif %}
 													</div>
 												</div>
 											</div>
@@ -67,11 +68,11 @@
                       {% if picture.status == 'a' %} 
 											<button data-id="{{ picture.picture_id }}"
                         data-action="add" id="updatebutton" class="btn rounded-0 btn-secondary update-cart" 
-												type="button">добавить в корзину
+												type="button">{% trans "add to cart" %}
                       </button>
                       {% endif %}
                       {% if picture.status == 'u' %}
-                        <button id="contactbutton" class="btn rounded-0 btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">связаться для покупки</button>
+                        <button id="contactbutton" class="btn rounded-0 btn-secondary update-cart" onclick="location.href='{% url "contacts" %}'" type="button">{% trans "contact to buy" %}</button>
                       {% endif %}
 										</div>
 									</div>

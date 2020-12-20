@@ -1,4 +1,5 @@
 from django.urls import path
+from django.urls import include
 from . import views
 from django.views.generic import RedirectView
 
@@ -15,6 +16,7 @@ urlpatterns = [
     path('process_order', views.processOrder, name="process_order"),
     path('store', views.store, name="store"),
     path('item/<str:pk>', views.item, name="item"),
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
 
 # redirecting root to store app

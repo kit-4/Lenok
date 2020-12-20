@@ -6,6 +6,7 @@ import json
 import datetime
 from django.core.mail import send_mail
 from .forms import Message
+from django.utils.translation import gettext as _
 # Create your views here.
 
 def works(request):
