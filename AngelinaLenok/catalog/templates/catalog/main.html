@@ -75,18 +75,18 @@
 				</a>
 			</div>
 			<div class="col-2"></div>
-      <div class="col-1 text-right">
+      <div class="col-1 text-right" style="padding-left: 0px; padding-right: 0px">
 				<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
 						<input name="next" type="hidden" value="{{ redirect_to }}">
 						<input name="language" type="hidden" value="en">
-						<button id="langbutton" type="submit" class="btn rounded-0 btn-secondary">en</button>
+						<button id="langbutton" type="submit" class="btn rounded-0 btn-secondary">EN</button>
 				</form>
       </div>      
-			<div class="col-1">
+			<div class="col-1" style="padding-left: 0px; padding-right: 0px">
 				<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
 						<input name="next" type="hidden" value="{{ redirect_to }}">
 						<input name="language" type="hidden" value="ru">
-						<button id="langbutton" type="submit" class="btn rounded-0 btn-secondary">ru</button>
+						<button id="langbutton" type="submit" class="btn rounded-0 btn-secondary">RU</button>
 				</form>
 			</div>
 			<!--<div class="col-2" style="text-align: right">

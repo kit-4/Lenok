@@ -127,14 +127,18 @@ li.nav-item a{
 }
 
 #langbutton{
+  font-size: 11px;
   background-color:white;
   color: #333333;
   border: 0px;
+  padding: 2px;
 }
 #langbutton:hover{
+  font-size: 11px;
   background-color:LightGray;
   color: #333333;
   border: 0px;
+  padding: 2px;
 }
 .navbar.navbar-expand-lg{
 background-color: lightGrey;
