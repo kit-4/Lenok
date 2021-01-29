@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-20 21:26+0300\n"
+"POT-Creation-Date: 2021-01-29 20:02+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: catalog/templates/catalog/about.html:7
-#: catalog/templates/catalog/main.html:120
+#: catalog/templates/catalog/main.html:121
 msgid "ARTIST"
 msgstr "ХУДОЖНИК"
 
@@ -27,21 +27,91 @@ msgid "Angelina Lenok"
 msgstr "Ангелина Ленок"
 
 #: catalog/templates/catalog/about.html:10
-msgid ""
-"is a young artist having a special art qualifications, from 2018 to present "
-"- student of the Faculty of Arts Lomonosov Moscow State University (MSU)"
-msgstr ""
-"- молодой художник, имеющий специальное художественное образование, в "
+msgid " is a young artist having a special art qualifications (2015y. Serov Art "
+"School №1, Moscow), from 2018 to present - student of the Faculty of Arts "
+"Lomonosov Moscow State University (MSU)"
+msgstr "- молодой художник, имеющий специальное художественное образование, в "
 "настоящий момент студент МГУ им. М.В. Ломоносова."
 
 #: catalog/templates/catalog/about.html:13
-msgid "CONCEPT"
+msgid "ARTIST'S STATEMENT"
 msgstr "КОНЦЕПЦИЯ ТВОРЧЕСТВА"
+
+#: catalog/templates/catalog/about.html:15
+msgid "My artist statement consists in the uniqueness of personal communication "
+"between a viewer and a work of art. An artist in artworks materializes and "
+"translates his emotions, converted into images through his personal "
+"perception of the world."
+msgstr "Творческая концепция, как и художественное направление, которые я "
+"декларирую, и которым следую в моих работах, заключаются в уникальной "
+"неповторимости личного общения между зрителем и произведением искусства. "
+"Художник в творческом произведении материализует и транслирует, "
+"конвертированные в образы эмоции, через личное восприятие мира."
+
+#: catalog/templates/catalog/about.html:16
+msgid "The artworks as a means of communication, between a work and a viewer, who "
+"becomes an object and at the same time an actor of emotional interaction "
+"with the unique content of it. In their deep personal relationships, between "
+"the works of art and a person who came to them, their existential "
+"communication, attentive concentration and the non-verbal, almost neural "
+"connection that arises between them."
+msgstr "Картина выступает как средство коммуникации, и это действие является личным "
+"выбором зрителя, который становится объектом и одновременно актором "
+"эмоционального взаимодействия с уникальным содержанием произведения "
+"художественного творчества. В их глубоких личных взаимоотношениях, между "
+"самими произведениями искусства и пришедшего к ним человека, их глубокого "
+"экзистенционального общения, внимательной сосредоточенности и возникающей "
+"между ними невербальной, почти нейронной связи."
+
+#: catalog/templates/catalog/about.html:17
+msgid "Works of art appeal not only to the inner dialogue of a person, but became a "
+"cause to think, and provoke mental work, making a viewer an intellectual "
+"person and bringing him to a qualitatively new level. Non-objective "
+"abstractions  or surreal images of animals are that best meet this task, by "
+"building a variety of colored forms that smoothly flow into each other, "
+"changing, forming unusual combinations, random figures, which are telling "
+"about unpredictability and momentary temporal nature of our world, "
+"nonlinearity history and paradoxical essence of being, that creates "
+"mystically surreal images."
+msgstr ""
+"Произведения искусства взывают не только к внутреннему диалогу человека, но "
+"вызывая его на размышления, и провоцируя на мыслительную работу, делают его "
+"интеллектуальным человеком, выводя на качественно новый уровень. Именно "
+"беспредметные абстракции или ирреальные изображения животных, лучше всего "
+"отвечают этой задаче, выстраивая разнообразные цветные формы, плавно "
+"перетекающие друг в друга, они изменяются, образуя необычные сочетания, "
+"случайные фигуры, рассказывающие о трепетности и непредсказуемости, о "
+"сиюминутности и временности свойственным нашему миру, нелинейности истории и "
+"парадоксальной сущности бытия, создавая мистически сюрреалистичные образы."
+
+#: catalog/templates/catalog/about.html:18
+msgid "A person learns the world through the systems of images and it is natural "
+"for him to find in an image something close and familiar. Of all of arts, "
+"Abstract and Non-Objective Art evokes the most sensual and emotional states. "
+"They are surreal and at the same time, very personally and individually "
+"reflection of the perception of the surrounding world. Consequently, looking "
+"at abstract and non-objective graphics or paintings, which transmit their "
+"unique content to the viewer, by his imagination, begins to seek and build "
+"pure logical connections, create random images, associate, find and think "
+"out. All of this prompts a person to unconscious emotional contact and "
+"dialogue with an artwork, by vain attempts to give objectivity to the "
+"depicted and visibility to the invisible."
+msgstr "Человек познает мир через системы образов и ему свойственно находить в "
+"изображении то, что близко и знакомо. Из всех видов искусств, Абстрактное и "
+"Беспредметное искусства вызывает наиболее чувственные и эмоциональные "
+"состояния. Они ирреальны и при этом, очень лично и индивидуально отражают "
+"восприятие окружающего мира. Таким образом, глядя на абстрактную и "
+"беспредметную графику или живопись, которые транслируют зрителю свое "
+"уникальное содержание, его воображение начинает искать и выстраивать чистые "
+"логические связи, создавать случайные образы, ассоциировать, находить и "
+"додумывать, побуждая человека к неосознанному эмоциональному контакту и "
+"диалогу с произведением искусства, в тщетных попытках придать предметность "
+"изображаемому и видимость невидимому."
 
 #: catalog/templates/catalog/color.html:6
 #: catalog/templates/catalog/store.html:14
 msgid "COLOR"
-msgstr "ЦВЕТНОЕ"
+msgstr "ЯРКОЕ"
 
 #: catalog/templates/catalog/color.html:22
 #: catalog/templates/catalog/color.html:72
@@ -80,7 +150,7 @@ msgstr "Категория"
 #: catalog/templates/catalog/graphics.html:63
 #: catalog/templates/catalog/works.html:61
 msgid "color"
-msgstr "цветное"
+msgstr "яркое"
 
 #: catalog/templates/catalog/color.html:64
 #: catalog/templates/catalog/graphics.html:64
@@ -89,7 +159,7 @@ msgid "graphics"
 msgstr "графика"
 
 #: catalog/templates/catalog/contacts.html:4
-#: catalog/templates/catalog/main.html:117
+#: catalog/templates/catalog/main.html:118
 msgid "CONTACTS"
 msgstr "КОНТАКТЫ"
 
@@ -118,14 +188,20 @@ msgstr "ГРАФИКА"
 msgid "ANGELINA LENOK"
 msgstr "АНГЕЛИНА ЛЕНОК"
 
-#: catalog/templates/catalog/main.html:111
+#: catalog/templates/catalog/main.html:112
 #: catalog/templates/catalog/works.html:6
 msgid "WORKS"
 msgstr "РАБОТЫ"
 
-#: catalog/templates/catalog/main.html:114
-msgid "SHOP"
+#: catalog/templates/catalog/main.html:115
+msgid "STORE"
 msgstr "МАГАЗИН"
+
+#~ msgid "SHOP"
+#~ msgstr "МАГАЗИН"
+
+#~ msgid "CONCEPT"
+#~ msgstr "КОНЦЕПЦИЯ ТВОРЧЕСТВА"
 
 #~ msgid "Contacts"
 #~ msgstr "Контакты"
