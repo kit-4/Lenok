@@ -105,10 +105,14 @@ class Project(models.Model):
 
     title = models.CharField(max_length=100)
     date = models.DateField(blank=True, null=True)
-    description = models.TextField(blank=True, null=True, max_length=5000)
+    description = models.TextField(blank=True, null=True, max_length=100000)
 
     gallery = models.CharField(blank=True, null=True, max_length=100)
 
     image = models.ImageField(upload_to='images')
-    link_name = models.CHarField(blank=False, null=False, max_length=100)
+    link_name = models.CharField(blank=False, null=False, max_length=100)
     project_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+
+    def __str__(self):
+        """String for representing the Model object."""
+        return self.title
