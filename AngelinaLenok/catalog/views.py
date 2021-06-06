@@ -79,6 +79,32 @@ def graphics(request):
 
     return render(request, 'catalog/graphics.html', context)
 
+
+def projects(request):
+    all_projects = Project.objects.all
+    context = {'projects': all_projects}
+    return render(request, 'catalog/projects.html', context)
+
+def project(request, pk):
+    project = Project.objects.get(project_id=pk)
+    try:
+        deviceId = request.COOKIES['deviceId']
+        customer, created = Customer.objects.get_or_create(deviceId=deviceId)
+        order, created = Order.objects.get_or_create(customer=customer,complete=False)
+        cart_num_of_items = order.orderitem_set.count()
+    except:
+        cart_num_of_items = 0
+
+    paragraphs = project.description.split('\n')
+    context = {
+            'project': project,
+            'number': cart_num_of_items,
+            'paragraphs': paragraphs,
+            }
+
+    return render(request, 'catalog/project.html', context)
+
+
 def cart(request):
 
     try:
@@ -211,4 +237,5 @@ def processOrder(request):
     transaction_id = datetime.datetime.now().timestamp()
     print('Data:', request.body)
     return JsonResponse('Payment complete', safe=False)
+
 

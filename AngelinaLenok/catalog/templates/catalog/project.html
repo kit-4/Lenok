@@ -1,0 +1,17 @@
+{% extends 'catalog/main.html' %}
+{% load i18n %}
+{% block content %}
+<div class="row">
+	<div class="col-sm-4">
+		<img class="card-img-top" src="{{ project.image.url }}" alt="blank image">
+	</div>
+	<div class="col-sm-8">
+		<h1>{{ project.title }}</h1>
+		<p style="font-size:14px; color:grey">{{ project.gallery }}</p>
+		<p style="font-size:14px; color:grey">{{ project.date }}</p>
+    {% for paragraph in paragraphs %}
+		<p style="color:#333333">{{ paragraph }}</p>
+    {% endfor %}
+	</div>
+</div>
+{% endblock %}
