@@ -110,4 +110,5 @@ class Project(models.Model):
     gallery = models.CharField(blank=True, null=True, max_length=100)
 
     image = models.ImageField(upload_to='images')
+    link_name = models.CHarField(blank=False, null=False, max_length=100)
     project_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

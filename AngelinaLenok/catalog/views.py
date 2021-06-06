@@ -86,7 +86,7 @@ def projects(request):
     return render(request, 'catalog/projects.html', context)
 
 def project(request, pk):
-    project = Project.objects.get(project_id=pk)
+    project = Project.objects.get(link_name=pk)
     try:
         deviceId = request.COOKIES['deviceId']
         customer, created = Customer.objects.get_or_create(deviceId=deviceId)
