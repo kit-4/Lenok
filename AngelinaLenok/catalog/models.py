@@ -97,3 +97,17 @@ class ShippingAddress(models.Model):
 
     def __str__(self):
         return self.address
+
+
+class Project(models.Model):
+    """A class representing a project (exhibition)
+    """
+
+    title = models.CharField(max_length=100)
+    date = models.DateField(blank=True, null=True)
+    description = models.TextField(blank=True, null=True, max_length=5000)
+
+    gallery = models.CharField(blank=True, null=True, max_length=100)
+
+    image = models.ImageField(upload_to='images')
+    project_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

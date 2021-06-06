@@ -17,6 +17,8 @@ urlpatterns = [
     path('store', views.store, name="store"),
     path('item/<str:pk>', views.item, name="item"),
     path('i18n/', include('django.conf.urls.i18n')),
+    path('projects/', views.projects, name='projects'),
+    path('project/<str:pk>', views.project, name="project"),
 ]
 
 # redirecting root to store app

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-29 20:02+0300\n"
+"POT-Creation-Date: 2021-06-06 19:17+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: catalog/templates/catalog/about.html:7
-#: catalog/templates/catalog/main.html:121
+#: catalog/templates/catalog/main.html:124
 msgid "ARTIST"
 msgstr "ХУДОЖНИК"
 
@@ -27,10 +27,12 @@ msgid "Angelina Lenok"
 msgstr "Ангелина Ленок"
 
 #: catalog/templates/catalog/about.html:10
-msgid " is a young artist having a special art qualifications (2015y. Serov Art "
+msgid ""
+" is a young artist having a special art qualifications (2015y. Serov Art "
 "School №1, Moscow), from 2018 to present - student of the Faculty of Arts "
 "Lomonosov Moscow State University (MSU)"
-msgstr "- молодой художник, имеющий специальное художественное образование, в "
+msgstr ""
+"- молодой художник, имеющий специальное художественное образование, в "
 "настоящий момент студент МГУ им. М.В. Ломоносова."
 
 #: catalog/templates/catalog/about.html:13
@@ -38,24 +40,28 @@ msgid "ARTIST'S STATEMENT"
 msgstr "КОНЦЕПЦИЯ ТВОРЧЕСТВА"
 
 #: catalog/templates/catalog/about.html:15
-msgid "My artist statement consists in the uniqueness of personal communication "
+msgid ""
+"My artist statement consists in the uniqueness of personal communication "
 "between a viewer and a work of art. An artist in artworks materializes and "
 "translates his emotions, converted into images through his personal "
 "perception of the world."
-msgstr "Творческая концепция, как и художественное направление, которые я "
+msgstr ""
+"Творческая концепция, как и художественное направление, которые я "
 "декларирую, и которым следую в моих работах, заключаются в уникальной "
 "неповторимости личного общения между зрителем и произведением искусства. "
 "Художник в творческом произведении материализует и транслирует, "
 "конвертированные в образы эмоции, через личное восприятие мира."
 
 #: catalog/templates/catalog/about.html:16
-msgid "The artworks as a means of communication, between a work and a viewer, who "
+msgid ""
+"The artworks as a means of communication, between a work and a viewer, who "
 "becomes an object and at the same time an actor of emotional interaction "
 "with the unique content of it. In their deep personal relationships, between "
 "the works of art and a person who came to them, their existential "
 "communication, attentive concentration and the non-verbal, almost neural "
 "connection that arises between them."
-msgstr "Картина выступает как средство коммуникации, и это действие является личным "
+msgstr ""
+"Картина выступает как средство коммуникации, и это действие является личным "
 "выбором зрителя, который становится объектом и одновременно актором "
 "эмоционального взаимодействия с уникальным содержанием произведения "
 "художественного творчества. В их глубоких личных взаимоотношениях, между "
@@ -64,7 +70,8 @@ msgstr "Картина выступает как средство коммуни
 "между ними невербальной, почти нейронной связи."
 
 #: catalog/templates/catalog/about.html:17
-msgid "Works of art appeal not only to the inner dialogue of a person, but became a "
+msgid ""
+"Works of art appeal not only to the inner dialogue of a person, but became a "
 "cause to think, and provoke mental work, making a viewer an intellectual "
 "person and bringing him to a qualitatively new level. Non-objective "
 "abstractions  or surreal images of animals are that best meet this task, by "
@@ -85,7 +92,8 @@ msgstr ""
 "парадоксальной сущности бытия, создавая мистически сюрреалистичные образы."
 
 #: catalog/templates/catalog/about.html:18
-msgid "A person learns the world through the systems of images and it is natural "
+msgid ""
+"A person learns the world through the systems of images and it is natural "
 "for him to find in an image something close and familiar. Of all of arts, "
 "Abstract and Non-Objective Art evokes the most sensual and emotional states. "
 "They are surreal and at the same time, very personally and individually "
@@ -96,7 +104,8 @@ msgid "A person learns the world through the systems of images and it is natural
 "out. All of this prompts a person to unconscious emotional contact and "
 "dialogue with an artwork, by vain attempts to give objectivity to the "
 "depicted and visibility to the invisible."
-msgstr "Человек познает мир через системы образов и ему свойственно находить в "
+msgstr ""
+"Человек познает мир через системы образов и ему свойственно находить в "
 "изображении то, что близко и знакомо. Из всех видов искусств, Абстрактное и "
 "Беспредметное искусства вызывает наиболее чувственные и эмоциональные "
 "состояния. Они ирреальны и при этом, очень лично и индивидуально отражают "
@@ -196,6 +205,11 @@ msgstr "РАБОТЫ"
 #: catalog/templates/catalog/main.html:115
 msgid "STORE"
 msgstr "МАГАЗИН"
+
+#: catalog/templates/catalog/main.html:121
+#: catalog/templates/catalog/projects.html:6
+msgid "PROJECTS"
+msgstr "ПРОЕКТЫ"
 
 #~ msgid "SHOP"
 #~ msgstr "МАГАЗИН"
